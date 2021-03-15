@@ -5,6 +5,7 @@
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 57%, rgba(255,210,0,1) 100%);
     height: 80px;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
@@ -18,3 +19,37 @@
 
 }
 
+.fa-caret-square-down {
+    color: #FFD200;
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.fa-caret-square-up{
+    color: #FFD200;
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    color:#FFD200;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover{
+    background-color:#FFD200;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
