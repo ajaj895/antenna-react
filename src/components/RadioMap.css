@@ -1,0 +1,10 @@
+.mapid {
+
+    height: 640 px;
+    position: relative;
+}
+
+.leaflet-container{
+    height: 640px;
+    position: relative;
+}

@@ -43,19 +43,9 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <div id="mapid" style="height: 640px; position: relative; "></div>
+    <!--<div id="mapid" style="height: 640px; position: relative; "></div> -->
     <!-- Leaflet setup script TODO: Hide Mapbox tokens -->
-    <script>
-      var mymap = L.map('mapid').setView([40.458,-90.672], 13); // County clerk building in Macomb IL
-      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 18,
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1,
-        accessToken: 'pk.eyJ1IjoiYWphajg5NSIsImEiOiJja21zbzEybGQwanI1Mm5vNDE5bWZzd2R1In0.tY8RS0zBsUY2Mda-QbuxfQ'
-      }).addTo(mymap);
-    </script>
+    <!-- <script></script> -->
 
     <!--
       This HTML file is a template.
