@@ -5,22 +5,22 @@ export const MenuItems = [
     // This stores each thing in the menu.
     {
         title: 'Home',
-        url: 'tempurl',
+        url: '/',
         cName: 'nav-links'
     },
     {
         title: 'Live Map',
-        url: 'tempurl',
+        url: 'Live-Map',
         cName: 'nav-links'
     },
     {
         title: 'Radio Near Me',
-        url: 'tempurl',
+        url: 'Radio-Near-Me',
         cName: 'nav-links'
     },
     {
         title: 'Radio Catalog',
-        url: 'tempurl',
+        url: 'Radio-Catalog',
         cName: 'nav-links'
     }
 ]

@@ -1,9 +1,15 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+//import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-import RadioMap from "./components/RadioMap";
+import Home from "./components/Home";
+import LiveMap from "./components/Live-Map";
+import RadioCatalog from './components/Radio-Catalog';
+import RadioNearMe from "./components/Radio-Near-Me";
 
+//import RadioMap from "./components/RadioMap";
+//<RadioMap className='radiomap' />
 /*
 var mymap = L.map('mapid').setView([40.458,-90.672], 13); // County clerk building in Macomb IL
       L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -32,9 +38,17 @@ var mymap = L.map('mapid').setView([40.458,-90.672], 13); // County clerk buildi
 function App(){
     return (
         <div className="App">
-            <Navbar />
-            <RadioMap />
-            
+            <Router>
+                <Navbar className='navbar' />
+                <Switch>
+                    <Route path="/" exact component={() => <Home />} />
+                    <Route path="/Live-Map" exact component={() => <LiveMap />} />
+                    <Route path="/Radio-Catalog" exact component={() => <RadioCatalog />} />
+                    <Route path="/Radio-Near-Me" exact component={() => <RadioNearMe />} />
+                </Switch>
+
+            </Router>
+
             
         </div>
     );

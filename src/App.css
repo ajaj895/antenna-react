@@ -27,3 +27,13 @@
 .App-link {
     color: aqua;
 }
+
+.navbar {
+    
+    z-index: 1;
+}
+
+.radiomap {
+    z-index: 0;
+}
+

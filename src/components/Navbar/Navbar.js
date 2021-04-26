@@ -16,11 +16,17 @@ class Navbar extends React.Component {
         this.setState({ clicked: !this.state.clicked })
     }
 
+    /*getCurrentState : function name(params) {
+        
+    }
+*/
     render() { // This is needed for any UI react element 
         return(
             <nav className='NavbarItems'>
                 <h1 className='navbar-logo'>
+                    <a href='/'>
                     <img className="navbar-logo" src={logo} alt='Antenna' title='Antenna' width='80px' height='80px'/>
+                    </a>
                 </h1>
                 <div className='menu-icon' onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-angle-up' : 'fas fa-angle-down'}></i>
@@ -42,6 +48,7 @@ class Navbar extends React.Component {
                 </ul>
                 <Button>Antenna</Button>
             </nav>
+            
         )
     }
 }
