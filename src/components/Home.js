@@ -4,6 +4,7 @@ function Home() {
     return(
         <div className = "Home">
             <div class="containter">
+                <br/>
                 <h1 class="font-weight-light"> Home </h1>
                 <p>
                     This is a test for routing and the home page.
