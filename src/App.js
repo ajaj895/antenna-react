@@ -36,6 +36,18 @@ var mymap = L.map('mapid').setView([40.458,-90.672], 13); // County clerk buildi
 
 
 function App(){
+    //const [data, setData] = React.useState(null);
+
+    // NODE API function
+    /*
+    React.useEffect(() => {
+        fetch("/sqltest")
+        .then((res) => res.json())
+        .then((data) => setData(data.message));
+    }, []);
+    <p>{!data ? "Loading..." : data}</p>
+    */
+
     return (
         <div className="App">
             <Router>
@@ -48,7 +60,7 @@ function App(){
                 </Switch>
 
             </Router>
-
+            
             
         </div>
     );
