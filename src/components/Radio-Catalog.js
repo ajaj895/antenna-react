@@ -6,7 +6,7 @@ function RadioCatalog(){
 
     // NODE API function
     React.useEffect(() => {
-        fetch("/sqltest")
+        fetch("/sam")
         .then((res) => res.json())
         .then((data) => setData(data.message));
     }, []);
@@ -19,16 +19,17 @@ function RadioCatalog(){
                 <p>
                     This is a test for routing and the radio catalog page.
                 </p>
-                <p>{!data ? "Loading..." : data}</p>
+                
                 <div class="Button-Div">
                     <ul>
                         
                         <li></li>
-                        <li><Button>AM Radio</Button></li>
+                        <li><Button >AM Radio</Button></li>
                         <li></li>
-                        <li><Button>FM Radio</Button></li>
+                        <li><Button >FM Radio</Button></li>
                     </ul>
                 </div>
+                <p>{!data ? "Loading..." : data}</p>
             </div>
         </div>
     );
