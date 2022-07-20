@@ -8,7 +8,7 @@ const mariadb = require('mariadb');
 const connection = mariadb.createPool({
     host    : 'localhost',
     user    : 'root',
-    password: 'pearl1941',
+    password: '',
     database: 'radio'
 });
 
